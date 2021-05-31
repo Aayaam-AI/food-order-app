@@ -11,7 +11,7 @@ const AvailableMeals = () => {
     // We can not directly use async function in useEffect so we enclose it in another function
     const fetchMeals = async () => {
       const response = await fetch(
-        "https://react-http-4bb0d-default-rtdb.firebaseio.com/meals.json"
+        "https://food-order-app-87d5e-default-rtdb.firebaseio.com/meals.json"
       );
 
       if (!response.ok) {
